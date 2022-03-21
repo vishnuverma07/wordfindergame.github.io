@@ -172,7 +172,7 @@ function levelCheck() {
   if (lives.length === 0) {
     titleDisplay.textContent = "Game Over";
     quit();
-    level.reload
+    level.reload();
   } else if (lives.length >= 1) titleDisplay.textContent = "Find-Word";
   if (
     level === 11 &&
