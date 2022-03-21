@@ -13,10 +13,18 @@
 <body>
     
         <header>
-            <h1 id="title-display">FIND WORD</h1>
+            <h1 id="title-display">FIND WORDS</h1>
         </header>
         <main>
             <section id="left-half">
+                <div style="text-align: center; color: white;">
+                    <h2>How To Play</h2>
+                    <h3> Fill in the blanks forming valid words using given letters.
+                        <br>Your Remaining Lives are denoted on the right side with Stars.
+                        <br> Use Hint button given below if you get stuck.
+                        <br> Good Luck !
+                    </h3>
+                </div>
             <table>
                 <tr>
                     <td id="l1" class="level-up-invisible">L1</td>
@@ -43,19 +51,29 @@
                     <td id="l7" class="level-up-invisible">L7</td>
                 </tr>
             </table>
-            <p>Multiple words are scrambled in the grid above.<br> Solve the puzzle by clicking each word's letters in the correct order.</p>
+            <!--<div style="text-align: center;">
+                <p> HOW TO PLAY !
+                    <br>Your Remaining Lives are denoted on the right side with Stars.
+                    <br> You will lose a life every time you enter an incorrect word.
+                    <br> Fill in the blanks forming valid words using above letters.
+                </p>
+            </div>-->
+            
             </section>
             <section id="right-half">
-                <h2 id="level-display">Level 1</h2>
+                <h2 id="level-display" style="color: white;">Level 1</h2>
+                <!--<h3> Fill in the blanks forming valid words using given letters.</h3>-->
+
                 <div id="lives">
 
                 </div>
                 <ul id="blank-spaces">
-
+                    
                 </ul>
+                
                 <div class="buttons">
                         <button id="retry">Retry Level</button>
-                        <button id="hint">? Hint</button>
+                        <button id="hint">Hint</button>
                         <button id="quit">Start Over</button>
                 </div>
             </section>

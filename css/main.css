@@ -1,5 +1,7 @@
 body {
-    background-color: rgb(224, 168, 210);
+    background-color: black;
+    /*background-color: rgb(224, 168, 210);
+    background-image: url('../images/bg-1.jpg');*/
     display: grid;
 }
 
@@ -8,7 +10,6 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "leftHalf rightHalf";
     display: grid;
-
 }
 
 table {
@@ -32,7 +33,7 @@ tr, td {
 header {
     height: 15vh;
     border-bottom: #b9ec42 5px solid;
-    background-color: rgba(30, 82, 226, 0.3);
+    background-color: rgb(130, 240, 180);
 }
 
 p {
@@ -49,6 +50,7 @@ h1 {
     text-align: center;
     font-size: 4em;
     font-family: 'Cabin Sketch', cursive;
+    margin-top: 1.8%;
 }
 
 li {
@@ -80,7 +82,7 @@ ul {
     list-style: none;
     font-size: 40px;
     letter-spacing: .25em;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 h2 {
@@ -89,10 +91,11 @@ h2 {
     font-size: 45px;
     font-family: 'Cabin Sketch', cursive;
 }
-
+#level-display {
+    padding: none;
+}
 .lives {
     grid-area: eggs;
-
 }
 
 #blank-spaces {
@@ -139,17 +142,24 @@ h2 {
 
 #retry {
     grid-area: retry;
-    border: orange 2px solid;
+    background-color: rgb(130, 240, 180);
+    border: rgb(130, 240, 180) 2px solid;
+    border-radius: 10px;
+    padding: 0px 10px;
 }
 
 #hint {
     grid-area: hint;
-    border: darkgrey 2px solid;
+    background-color: rgb(130, 240, 180);
+    border: rgb(130, 240, 180) 2px solid;
+    border-radius: 10px;
+    padding: 0px 40px;
 }
 
 #quit {
     grid-area: quit;
-    border: orangered 2px solid;
-    background-color: rgba(196, 193, 130, 0.728);
-
+    background-color: rgb(130, 240, 180);
+    border: rgb(130, 240, 180) 2px solid;
+    border-radius: 10px;
+    padding: 0px 10px;
 }
