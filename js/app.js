@@ -178,6 +178,9 @@ function levelCheck() {
     level === 11 &&
     completedWords.length === levelsArray[level].levelAnswers.length
   ) {
-    titleDisplay.textContent = " Congratulations!";
+    titleDisplay.textContent = " Congratulations! YOU HAVE FINISHED THE GAME";
+    setTimeout(quit,5000);
+    quit();
+    location.reload(
   }
 }
